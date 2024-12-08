@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Escape Game Chat - Dino Theme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <h1>Chat Escape Game</h1>
+        <div id="chat"></div>
+        <input id="input" type="text" placeholder="Écrivez un message..." />
+        <button id="send-btn">Envoyer</button>
+    </div>
+
+    <!-- Fenêtre déplaçable -->
+    <div id="live-window" class="live-window">
+        <div class="live-header">
+            <span class="title">Fenêtre Déplaçable</span>
+            <span id="close-btn" class="close-btn">✖</span>
+        </div>
+        <div id="live-content" class="live-content">
+            <p>Aucun message pour le moment...</p>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
